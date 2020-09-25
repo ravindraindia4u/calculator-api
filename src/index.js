@@ -36,7 +36,7 @@ app.post("/add",(req, res) => {
     }else{
         res.json({
             status: "success",
-            message: "the sum of given two number",
+            message: "the sum of given two numbers",
             sum: sum
         });
     }
@@ -56,7 +56,7 @@ app.post("/sub",(req, res) => {
     }else if(num1 <= num || num2 <= num ){
         res.json({
             status: "failure",
-            message: "Overflow"
+            message: "Underflow"
         });
     }else{
         let sub = num1 - num2;
