@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 
 // your code goes here
 app.get("/", (req, res) => {
-  res.send("Hello world!");
+  return res.json({ message: "Hello world!" });
 });
 
 // addition operation
